@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+void main() {}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -105,7 +103,11 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text('Welcome to my sandwhich shop!'),
-          ],
+            Text(
+            '$_counter',
+            style: Theme.of(context).textTheme.headlineMedium,
+        ),
+        ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
